@@ -12,7 +12,6 @@ const mapOrgsToValues = pipe(mapOrgNames, values)
 
 class OrgsSideBar extends React.Component {
   render () {
-    console.log('This.props', this.props)
     return (
       <ul>
         {mapOrgsToValues(this.props.orgs)}
