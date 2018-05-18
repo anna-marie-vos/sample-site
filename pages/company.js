@@ -35,12 +35,12 @@ class Company extends React.Component {
   render () {
     const {orgs, risks, url} = this.props
     return (
-      <div>
-        <OrgsSideBar orgs={orgs} />
-        <ul>
-          <li>Title 1</li>
-          <li>Title 2</li>
-          <li>Title 3</li>
+      <div className="grid-container">
+        <OrgsSideBar  orgs={orgs} />
+        <ul className="grid-item">
+          <li >Title 1</li>
+          <li >Title 2</li>
+          <li >Title 3</li>
         </ul>
         <ul>
           {this.renderRisks(risks[url.query.id])}

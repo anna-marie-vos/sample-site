@@ -38,6 +38,19 @@ export default css`
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% auto auto;
+}
+.grid-item {
+  text-align: center;
+}
+.left{
+  background-color: pink;
+}
+
+
 .column,
 .columns {
   width: 100%;

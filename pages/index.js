@@ -16,7 +16,7 @@ class Index extends React.Component {
 
   render () {
     return (
-      <div>
+      <div >
         <OrgsSideBar orgs={this.props.orgs} />
         <Link href="/about">
           <a>About Page</a>
