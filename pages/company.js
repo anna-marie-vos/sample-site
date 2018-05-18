@@ -4,11 +4,11 @@ const orgData = require('../db/orgs.json')
 const riskData = require('../db/riskRegisters.json')
 
 const mapRiskNames = mapObjIndexed((risk, key) => (
-  <ul key={key}>
-    <li>{risk.title1}</li>
-    <li>{risk.title2}</li>
-    <li>{risk.title3}</li>
-  </ul>
+  <tr key={key}>
+    <td>{risk.title1}</td>
+    <td>{risk.title2}</td>
+    <td>{risk.title3}</td>
+  </tr>
 ))
 const mapRisksToValues = pipe(mapRiskNames, values)
 
@@ -37,15 +37,17 @@ class Company extends React.Component {
     return (
       <div className="grid-container">
         <OrgsSideBar  orgs={orgs} />
-        <ul className="grid-item">
-          <li >Title 1</li>
-          <li >Title 2</li>
-          <li >Title 3</li>
-        </ul>
-        <ul>
-          {this.renderRisks(risks[url.query.id])}
-        </ul>
-
+        <div className="grid-item">
+          <h1>{orgs[url.query.id].name}</h1>
+          <table>
+            <tr>
+              <th >Title 1</th>
+              <th >Title 2</th>
+              <th >Title 3</th>
+            </tr>
+            {this.renderRisks(risks[url.query.id])}
+          </table>
+        </div>
       </div>
     )
   }

@@ -16,12 +16,14 @@ class Index extends React.Component {
 
   render () {
     return (
-      <div >
+      <div className="grid-container">
         <OrgsSideBar orgs={this.props.orgs} />
-        <Link href="/about">
-          <a>About Page</a>
-        </Link>
-        <p>Hello Next.js</p>
+        <div>
+          <Link href="/about">
+            <a>About Page</a>
+          </Link>
+          <p>Hello Next.js</p>
+        </div>
       </div>
     )
   }

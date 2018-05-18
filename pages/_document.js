@@ -16,7 +16,7 @@ export default class MyDocument extends Document {
           <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"/>
           <style>{css}</style>
         </Head>
-        <body className="custom_class container">
+        <body className="custom_class ">
           <Main />
           <NextScript />
         </body>
