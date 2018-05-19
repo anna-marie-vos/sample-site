@@ -6,7 +6,7 @@ export default css`
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 - Grid
 - sidebar Styles
-- riksTable Styles
+- risksTable Styles
 - hamburger
 - Media Queries
 */
@@ -129,7 +129,7 @@ h2 {
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Screens smaller than 550px */
+/* Screens smaller than 725px */
 @media (max-width: 725px){
   .grid-container-two {
     grid-template-columns: 8% auto;
