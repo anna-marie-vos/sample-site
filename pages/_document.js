@@ -13,7 +13,6 @@ export default class MyDocument extends Document {
         <Head>
           <title>Sample Page</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"/>
           <style>{css}</style>
         </Head>
         <body className="custom_class ">

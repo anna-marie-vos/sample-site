@@ -44,9 +44,9 @@ class Company extends React.Component {
             <h2>{orgs[url.query.id].name}</h2>
             <table className="grid-container-one risksTable">
               <tr className="grid-container-three ">
-                <th >Title 1</th>
-                <th >Title 2</th>
-                <th >Title 3</th>
+                <th >Catagory</th>
+                <th >Risks</th>
+                <th >Mitigation</th>
               </tr>
               {this.renderRisks(risks[url.query.id])}
             </table>

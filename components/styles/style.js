@@ -16,6 +16,7 @@ export default css`
 * {
   font-family: arial, Geneva, sans-serif;
   background-color: #D1E8E2;
+  color: #2C3531;
 }
 
 .grid-container-one {
@@ -73,7 +74,7 @@ h1 {
 
 }
 h2 {
-    margin: 1.2em;
+    margin: 1.3em;
   font-weight: normal;
   text-transform: uppercase;
 }
