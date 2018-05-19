@@ -3,9 +3,11 @@ import Link from 'next/link'
 
 const mapOrgNames = mapObjIndexed((org, key) => (
   <tr key={key}>
-    <Link href={`/company?id=${org.id}`}>
-      <a>{org.name}</a>
-    </Link>
+    <td>
+      <Link href={`/company?id=${org.id}`}>
+        <a>{org.name}</a>
+      </Link>
+    </td>
   </tr>
 ))
 const mapOrgsToValues = pipe(mapOrgNames, values)
@@ -13,7 +15,7 @@ const mapOrgsToValues = pipe(mapOrgNames, values)
 class OrgsSideBar extends React.Component {
   render () {
     return (
-      <table className="grid-item left">
+      <table className=" sidebar">
         {mapOrgsToValues(this.props.orgs)}
       </table>
     )

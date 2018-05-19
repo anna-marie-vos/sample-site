@@ -23,28 +23,43 @@ export default css`
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 * {
-  border-style: solid;
-  border-color: red;
+  font-family: arial, Geneva, sans-serif;
+  background-color: #2C3531;
+  color: #D1E8E2;
 }
-.grid-container {
+
+.grid-container-one {
+  display: grid;
+  grid-template-columns: auto;
+}
+.grid-container-two {
   display: grid;
   grid-template-columns: 30% auto;
+    grid-template-rows: auto;
+}
+.grid-container-three {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 .grid-item {
   text-align: center;
+  align-self: stretch;
 }
-.left{
-  background-color: pink;
-}
-
 
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
+.sidebar td {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  background-color: #116466;
+}
 
+.sidebar a {
+  background-color: #116466;
+  text-decoration: none;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

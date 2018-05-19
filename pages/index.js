@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import OrgsSideBar from '../components/orgsSideBar'
+import TopMenu from '../components/topMenu'
 const seedData = require('../db/orgs.json')
 
 class Index extends React.Component {
@@ -16,13 +17,13 @@ class Index extends React.Component {
 
   render () {
     return (
-      <div className="grid-container">
-        <OrgsSideBar orgs={this.props.orgs} />
-        <div>
-          <Link href="/about">
-            <a>About Page</a>
-          </Link>
-          <p>Hello Next.js</p>
+      <div className="grid-container-one">
+        <TopMenu />
+        <div className="grid-container-two">
+          <OrgsSideBar orgs={this.props.orgs} />
+          <div className="grid-item">
+            <h1>Hello Next.js</h1>
+          </div>
         </div>
       </div>
     )
