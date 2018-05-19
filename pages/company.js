@@ -41,8 +41,8 @@ class Company extends React.Component {
         <div className="grid-container-two">
           <OrgsSideBar  orgs={orgs} />
           <div className="grid-item">
-            <h1>{orgs[url.query.id].name}</h1>
-            <table className="grid-container-one ">
+            <h2>{orgs[url.query.id].name}</h2>
+            <table className="grid-container-one risksTable">
               <tr className="grid-container-three ">
                 <th >Title 1</th>
                 <th >Title 2</th>

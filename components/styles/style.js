@@ -15,8 +15,7 @@ export default css`
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 * {
   font-family: arial, Geneva, sans-serif;
-  background-color: #2C3531;
-  color: #D1E8E2;
+  background-color: #D1E8E2;
 }
 
 .grid-container-one {
@@ -37,7 +36,6 @@ export default css`
   align-self: stretch;
 }
 
-
 /* sidebar styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .sidebar td {
@@ -46,6 +44,7 @@ export default css`
   border-width: thin;
   border-radius: 3px;
   box-shadow: 0px 1px 4px -2px #333;
+
   text-align: center;
   text-transform: uppercase;
 }
@@ -58,7 +57,7 @@ export default css`
   background-color: rgba(17, 100, 102, 0.0);
 }
 .sidebar a:hover {
-  background-color: rgba(17, 100, 102, 0.8);
+  background-color: rgba(17, 100, 102, 0.5);
 }
 
 .sidebar img {
@@ -69,8 +68,35 @@ export default css`
 
 /* risksTable Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.risksTable {
-  background-color: blue;
+h1 {
+  text-transform: uppercase;
+
+}
+h2 {
+    margin: 1.2em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.risksTable th{
+  margin: 0.2em;
+  background-color: rgba(17, 100, 102, 0.3);
+  padding: 10px;
+  border: solid;
+  border-color: #40E0D0;
+  border-width: thin;
+
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 110%;
+}
+.risksTable td{
+  margin: 0.2em;
+  background-color: rgba(17, 100, 102, 0.1);
+  padding: 10px;
+
+  border: solid;
+  border-color: #40E0D0;
+  border-width: thin;
 }
 
 /* Links
