@@ -18,7 +18,7 @@ class Company extends React.Component {
     const risks = {}
     const orgs = {}
     orgData.data.map(org => {
-      orgs[org.id] = { 'id': org.id, 'name': org.name }
+      orgs[org.id] = org
     })
     riskData.risks.map(risk => {
       risks[risk.id_org] = {}
@@ -42,8 +42,8 @@ class Company extends React.Component {
           <OrgsSideBar  orgs={orgs} />
           <div className="grid-item">
             <h1>{orgs[url.query.id].name}</h1>
-            <table className="grid-container-one">
-              <tr className="grid-container-three">
+            <table className="grid-container-one ">
+              <tr className="grid-container-three ">
                 <th >Title 1</th>
                 <th >Title 2</th>
                 <th >Title 3</th>

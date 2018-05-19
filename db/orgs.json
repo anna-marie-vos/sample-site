@@ -2,19 +2,23 @@
   "data":[
     {
       "id":1,
-      "name":"Stark Industries"
+      "name":"Stark Industries",
+      "logo":"../static/images/stark.jpg"
     },
     {
       "id":2,
-      "name":"Wayne Enterprises"
+      "name":"Wayne Enterprises",
+      "logo":"../static/images/Wayne.jpg"
     },
     {
       "id":3,
-      "name":"LexCorp"
+      "name":"LexCorp",
+      "logo":"../static/images/LexCorpLogo.jpg"
     },
     {
       "id":4,
-      "name":"Queen Consolidated"
+      "name":"Queen Consolidated",
+      "logo":"../static/images/Queen.jpg"
     }
   ]
 }

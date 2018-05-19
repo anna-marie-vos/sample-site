@@ -5,17 +5,8 @@ export default css`
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 - Grid
-- Base Styles
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
+- sidebar Styles
+- riksTable Styles
 - Media Queries
 */
 
@@ -47,30 +38,40 @@ export default css`
 }
 
 
-/* Base Styles
+/* sidebar styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .sidebar td {
-  text-align: center;
-  text-transform: uppercase;
-  background-color: rgba(17, 100, 102, 0.3);
   border: solid;
   border-color: #40E0D0;
   border-width: thin;
+  border-radius: 3px;
+  box-shadow: 0px 1px 4px -2px #333;
+  text-align: center;
+  text-transform: uppercase;
 }
-
 .sidebar a {
-  padding: 20px;
-  background-color: rgba(17, 100, 102, 0.3);
+  padding: 10px;
+  background-color: rgba(17, 100, 102, 0.1);
   text-decoration: none;
-  display: block;
+}
+.sidebar p{
+  background-color: rgba(17, 100, 102, 0.0);
 }
 .sidebar a:hover {
-  background-color: rgba(17, 100, 102, 1);
+  background-color: rgba(17, 100, 102, 0.8);
 }
 
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.sidebar img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
 
+/* risksTable Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.risksTable {
+  background-color: blue;
+}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

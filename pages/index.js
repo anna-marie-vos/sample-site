@@ -7,10 +7,7 @@ class Index extends React.Component {
   static async getInitialProps () {
     const orgs = {}
     seedData.data.map(org => {
-      orgs[org.id] = {
-        'id': org.id,
-        'name': org.name
-      }
+      orgs[org.id] = org
     })
     return { orgs }
   }
