@@ -15,7 +15,7 @@ class Index extends React.Component {
   render () {
     return (
       <div className="grid-container-one">
-        <TopMenu condition={this.state.condition} />
+        <TopMenu />
         <div className="grid-container-two">
           <OrgsSideBar orgs={this.props.orgs} />
           <div className="grid-item">
