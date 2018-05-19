@@ -7,6 +7,7 @@ export default css`
 - Grid
 - sidebar Styles
 - riksTable Styles
+- hamburger
 - Media Queries
 */
 
@@ -39,6 +40,9 @@ export default css`
 
 /* sidebar styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.sidebar.active {
+  display: none;
+}
 .sidebar td {
   border: solid;
   border-color: #40E0D0;
@@ -100,64 +104,56 @@ h2 {
   border-width: thin;
 }
 
-/* Links
+/* hamburger
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hambrg-btn {
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
 
+.hambrg-btn span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #2C3531;
+  margin: 3px 0px;
+  padding: 1px;
+  margin: 0.2em;
+}
 
-/* Buttons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hambrg-btn.active span {
+  display: none;
+}
 
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
+/* Screens smaller than 550px */
+@media (max-width: 550px){
+  /* .grid-container-two.sidebar.active {
+    display: grid;
+    grid-template-columns: 30% auto;
+      grid-template-rows: auto;
+  } */
+}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+  .hambrg-btn {
+    display: none;
+  }
+  .sidebar {
+    display: block;
+  }
+  .sidebar.active {
+    display: block;
+  }
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
 
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+}
 
 `

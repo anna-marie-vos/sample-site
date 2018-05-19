@@ -15,11 +15,12 @@ class Index extends React.Component {
   render () {
     return (
       <div className="grid-container-one">
-        <TopMenu />
+        <TopMenu condition={this.state.condition} />
         <div className="grid-container-two">
           <OrgsSideBar orgs={this.props.orgs} />
           <div className="grid-item">
-            <h1>Hello Next.js</h1>
+            <h2>Risk Register</h2>
+            <p>To view the risk register, click on your company name to view the current risks.</p>
           </div>
         </div>
       </div>

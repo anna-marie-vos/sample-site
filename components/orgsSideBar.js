@@ -16,11 +16,32 @@ const mapOrgNames = mapObjIndexed((org, key) => (
 const mapOrgsToValues = pipe(mapOrgNames, values)
 
 class OrgsSideBar extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = { condition: false }
+    this.eventHandler = this.eventHandler.bind(this)
+  }
+
+  eventHandler (event) {
+    this.setState((prevState) => ({
+      condition: !prevState.condition
+    }))
+  }
+
   render () {
     return (
-      <table className="sidebar">
-        {mapOrgsToValues(this.props.orgs)}
-      </table>
+      <div className="grid-item">
+        <div className={this.state.condition ? "hambrg-btn active" : "hambrg-btn"}
+          onClick={this.eventHandler}>
+          <span />
+          <span />
+          <span />
+        </div>
+        <table className={this.state.condition ? "sidebar" : "sidebar active"}
+          onClick={this.eventHandler}>
+          {mapOrgsToValues(this.props.orgs)}
+        </table>
+      </div>
     )
   }
 }
