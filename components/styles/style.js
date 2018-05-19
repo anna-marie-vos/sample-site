@@ -52,14 +52,20 @@ export default css`
 .sidebar td {
   text-align: center;
   text-transform: uppercase;
-  background-color: #116466;
+  background-color: rgba(17, 100, 102, 0.3);
+  border: solid;
+  border-color: #40E0D0;
+  border-width: thin;
 }
 
 .sidebar a {
   padding: 20px;
-  background-color: #116466;
+  background-color: rgba(17, 100, 102, 0.3);
   text-decoration: none;
   display: block;
+}
+.sidebar a:hover {
+  background-color: rgba(17, 100, 102, 1);
 }
 
 /* Typography
