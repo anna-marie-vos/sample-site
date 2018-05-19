@@ -52,13 +52,14 @@ export default css`
 .sidebar td {
   text-align: center;
   text-transform: uppercase;
-  padding: 20px;
   background-color: #116466;
 }
 
 .sidebar a {
+  padding: 20px;
   background-color: #116466;
   text-decoration: none;
+  display: block;
 }
 
 /* Typography
