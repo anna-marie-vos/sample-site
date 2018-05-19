@@ -43,12 +43,14 @@ class Company extends React.Component {
           <div className="grid-item">
             <h2>{orgs[url.query.id].name}</h2>
             <table className="grid-container-one risksTable">
-              <tr className="grid-container-three ">
-                <th >Catagory</th>
-                <th >Risks</th>
-                <th >Mitigation</th>
-              </tr>
-              {this.renderRisks(risks[url.query.id])}
+              <tbody>
+                <tr className="grid-container-three ">
+                  <th >Catagory</th>
+                  <th >Risks</th>
+                  <th >Mitigation</th>
+                </tr>
+                {this.renderRisks(risks[url.query.id])}
+              </tbody>
             </table>
           </div>
         </div>

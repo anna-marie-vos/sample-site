@@ -54,7 +54,7 @@ export default css`
   text-transform: uppercase;
 }
 .sidebar a {
-  padding: 10px;
+  padding: 8px;
   background-color: rgba(17, 100, 102, 0.1);
   text-decoration: none;
 }
@@ -108,7 +108,7 @@ h2 {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hambrg-btn {
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 2em;
   cursor: pointer;
 }
 
@@ -130,16 +130,19 @@ h2 {
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Screens smaller than 550px */
-@media (max-width: 550px){
-  /* .grid-container-two.sidebar.active {
-    display: grid;
-    grid-template-columns: 30% auto;
-      grid-template-rows: auto;
-  } */
+@media (max-width: 725px){
+  .grid-container-two {
+    grid-template-columns: 8% auto;
+  }
+  .sidebar {
+    margin-right: 2px;
+    position: absolute;
+    width: 100%;
+  }
 }
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
+@media (min-width: 725px) {
   .hambrg-btn {
     display: none;
   }
@@ -149,11 +152,6 @@ h2 {
   .sidebar.active {
     display: block;
   }
-}
-
-/* Larger than tablet */
-@media (min-width: 750px) {
-
 }
 
 `

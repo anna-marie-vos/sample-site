@@ -39,7 +39,9 @@ class OrgsSideBar extends React.Component {
         </div>
         <table className={this.state.condition ? "sidebar" : "sidebar active"}
           onClick={this.eventHandler}>
-          {mapOrgsToValues(this.props.orgs)}
+          <tbody>
+            {mapOrgsToValues(this.props.orgs)}
+          </tbody>
         </table>
       </div>
     )
